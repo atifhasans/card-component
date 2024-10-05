@@ -1,0 +1,80 @@
+.listing-container {
+    display: flex;
+    flex-direction: row; /* Display cards horizontally */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    gap: 20px; /* Increased spacing between cards */
+}
+
+.listing-card {
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 20px); /* Four cards in a row with spacing */
+    border: 1px solid #e0e0e0; /* Soft border */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure no overflow of content */
+    background-color: #fff; /* Background color */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.listing-card:hover {
+    transform: translateY(-4px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.image-container {
+    width: 100%; /* Full width */
+    height: 200px; /* Set a fixed height */
+    overflow: hidden; /* Hide overflow */
+    display: flex; /* Center image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #f8f8f8; /* Light gray background for image container */
+}
+
+.thumbnail {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container */
+}
+
+.details {
+    padding: 15px; /* Add padding around details */
+}
+
+.title {
+    font-size: 1.25em; /* Larger title size */
+    font-weight: bold; /* Make title bold */
+    color: #333; /* Darker text color */
+    margin-bottom: 5px; /* Space below title */
+}
+
+.price {
+    color: #d9534f; /* Price color */
+    font-size: 1.1em; /* Set font size */
+    margin-bottom: 10px; /* Space below price */
+}
+
+.favorite {
+    margin-top: 5px; /* Space above the favorite icon */
+    display: flex; /* Center favorite icon */
+    justify-content: flex-end; /* Align to the right */
+}
+
+.favorite-icon {
+    width: 24px; /* Set icon size */
+    height: 24px; /* Set icon size */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.location-date {
+    display: flex; /* Flexbox for location and date */
+    justify-content: space-between; /* Space between them */
+    margin-top: 10px; /* Space above */
+    font-size: 0.9em; /* Smaller font size for location and date */
+    color: #666; /* Lighter text color */
+}
+
+.location {
+    margin-right: 10px; /* Space between location and date */
+}
